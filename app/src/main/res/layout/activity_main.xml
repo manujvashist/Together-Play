@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="start"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity"
+    android:background="@color/abc_input_method_navigation_guard">
+
+    <Button
+        android:id="@+id/btn_Speaker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btn_DJ"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="41dp"
+        android:height="100dp"
+        android:minHeight="100dp"
+        android:minWidth="150dp"
+        android:onClick="onBtnSp"
+        android:text="Speaker Mode"
+        android:width="200dp" />
+
+    <Button
+        android:id="@+id/btn_DJ"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="54dp"
+        android:height="150dp"
+        android:minHeight="100dp"
+        android:minWidth="150dp"
+        android:onClick="onBtnDJ"
+        android:text="DJ Mode"
+        android:width="250dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+
+    <Button
+        android:text="MIC mode"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:id="@+id/btn_Mic"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/btn_DJ"
+        android:layout_alignStart="@+id/btn_DJ"
+        android:onClick="onBtnMic(MainActivity)" />
+
+</RelativeLayout>
