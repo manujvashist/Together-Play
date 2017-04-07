@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.Infiniteloop.TogetherPlay">
-
+    
     <uses-sdk
         android:minSdkVersion="16"
         android:targetSdkVersion="21" />
@@ -14,14 +14,16 @@
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.NFC" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
 
     <!-- Google Play filtering -->
     <uses-feature
         android:name="android.hardware.nfc"
-        android:required="true" />
+        android:required="false" />
     <uses-feature
         android:name="android.hardware.wifi.direct"
-        android:required="true" />
+        android:required="false" />
 
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
 
@@ -38,7 +40,8 @@
             android:theme="@android:style/Theme.Holo">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
+                <data android:scheme="Together play"
+                      android:host="Together play" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -73,9 +76,7 @@
             android:screenOrientation="nosensor"
             android:theme="@android:style/Theme.Holo" />
     </application>
-    <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.RECORD_AUDIO" />
-    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
 
 
 
