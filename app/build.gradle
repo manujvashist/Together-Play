@@ -8,8 +8,8 @@ android {
         applicationId "com.Infiniteloop.TogetherPlay"
         minSdkVersion 16
         targetSdkVersion 21
-        versionCode 3
-        versionName "3.0"
+        versionCode 1
+        versionName "1.0"
     }
     buildTypes {
         release {
